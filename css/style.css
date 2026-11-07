@@ -1,0 +1,39 @@
+/* Global Styles and CSS3 Styling Techniques */
+:root {
+    --primary-green: #2e7d32;
+    --light-green: #f1f8e9;
+    --dark-text: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-green);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    color: var(--primary-green);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid var(--primary-green);
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Recommendations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Irrigation Advisory</h1>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farmer-registration.html">Farmer Registration</a></li>
+            <li><a href="irrigation-recommendations.html">Advisory Services</a></li>
+            <li><a href="weather-info.html">Weather Info</a></li>
+            <li><a href="crop-monitoring.html">Crop Monitoring</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Generate Irrigation Plan</h2>
+        <div class="card layout-flex">
+            <div class="col">
+                <button id="generateBtn" class="btn">Calculate Water Requirement</button>
+            </div>
+            <div class="col" id="advisoryOutput">
+                <!-- JavaScript will inject recommendations here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/advisory.js"></script>
+</body>
+</html>

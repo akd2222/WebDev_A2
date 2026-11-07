@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+        <h1>Register Your Farm</h1>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farmer-registration.html">Farmer Registration</a></li>
+            <li><a href="irrigation-recommendations.html">Advisory Services</a></li>
+            <li><a href="weather-info.html">Weather Info</a></li>
+            <li><a href="crop-monitoring.html">Crop Monitoring</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <form id="registrationForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="farmerName">Full Name:</label>
+                <input type="text" id="farmerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number (10 digits):</label>
+                <input type="number" id="mobile" oninput="this.value=this.value.slice(0,10)" required>
+                <span id="mobileError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="soilMoisture">Soil Moisture (%):</label>
+                <input type="number" id="soilMoisture" max="100" required>
+                <span id="moistureError" class="error"></span>
+            </div>
+
+            <button type="submit" class="btn">Register Data</button>
+            <p id="successMessage" class="success"></p>
+        </form>
+    </main>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
